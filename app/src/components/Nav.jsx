@@ -14,12 +14,12 @@ const Nav = () => {
   return (
     <header className="z-10 bg-white shadow-md dark:bg-gray-900 dark:text-white transition-all duration-300 ease-in-out">
       <nav className="container mx-auto p-4 flex flex-col lg:flex-row justify-between items-center">
-        <div className="logo">
+        <div className="logo basis-1/5">
           <Link
             to="/"
-            className="font-extrabold text-2xl text-gray-800 dark:text-white"
+            className="font-extrabold text-2xl text-gray-800 dark:text-white flex justify-start items-center"
           >
-            About<span className="text-blue-500">SuperJane</span>
+            <img src="\src\assets\android-chrome-512x512.png" alt="logo" className="h-10"/><p className="text-blue-500 ml-2">SuperJane</p>
           </Link>
         </div>
 
@@ -35,14 +35,14 @@ const Nav = () => {
         </button>
 
         <div
-          className={`lg:flex flex-col lg:flex-row w-auto my-2 flex-auto items-center justify-center gap-2 bg-white lg:bg-transparent lg:shadow-none transition-all duration-300 ease-in-out overflow-hidden lg:max-h-full lg:opacity-100 ${
+          className={`basis-3/5 lg:flex flex-col lg:flex-row w-auto my-2 flex-auto items-center justify-center gap-2 bg-white lg:bg-transparent lg:shadow-none transition-all duration-300 ease-in-out overflow-hidden lg:max-h-full lg:opacity-100 ${
             isMenuOpen ? "max-h-96 opacity-100 mb-4 dark:bg-gray-900  " : "max-h-0 opacity-0 "
           }`}
         >
           {/* className="navigation flex flex-col lg:flex-row items-center gap-2 mt-4 lg:mt-0" */}
           <Link
             to="/"
-            className="px-4 py-2 text-white font-medium transition duration-200 ease-in-out btn-primary mx-1 rounded-full lg:rounded-lg lg:mx-0"
+            className="btn-ghost btn-2 mx-1"
             onClick={() => setIsMenuOpen(false)}
           >
             Home
@@ -50,7 +50,7 @@ const Nav = () => {
 
           <Link
             to="/about"
-            className="px-4 py-2 text-white font-medium transition duration-200 ease-in-out btn-primary mx-1 rounded-full lg:rounded-lg lg:mx-0"
+            className="btn-ghost btn-2 mx-1"
             onClick={() => setIsMenuOpen(false)}
           >
             About
@@ -58,7 +58,7 @@ const Nav = () => {
 
           <Link
             to="/projects"
-            className="px-4 py-2 text-white font-medium transition duration-200 ease-in-out btn-primary mx-1 rounded-full lg:rounded-lg lg:mx-0"
+            className="btn-ghost btn-2 mx-1"
             onClick={() => setIsMenuOpen(false)}
           >
             Projects
@@ -66,15 +66,17 @@ const Nav = () => {
 
           <Link
             to="/contact"
-            className="px-4 py-2 text-white font-medium transition duration-200 ease-in-out btn-primary mx-1 rounded-full lg:rounded-lg lg:mx-0"
+            className="btn-ghost btn-2 mx-1"
             onClick={() => setIsMenuOpen(false)}
           >
             Contact
           </Link>
         </div>
-        <div className="lg:mt-0">
+
+        <div className="lg:mt-0 basis-1/5 flex justify-end">
           <SwitchTheme />
         </div>
+
       </nav>
     </header>
   );
