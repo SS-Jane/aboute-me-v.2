@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import Nav from "../components/Nav";
+import Nav from "../components/Nav/Nav";
 import Footer from "../components/Footer";
 
 const DefaultLayout = ({ children }) => {
