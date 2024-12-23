@@ -26,7 +26,7 @@ const Nav = () => {
             <span className="font-bold text-xl text-blue-500">SuperJane</span>
           </Link>
 
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 text-lg">
             <Link
               to="/"
               className="btn-ghost btn-2 mx-1 transition-colors"
@@ -80,7 +80,7 @@ const Nav = () => {
               : "max-h-0 opacity-0 overflow-hidden"
           }`}
         >
-          <div className="flex flex-col justify-center item-center space-y-4 py-4">
+          <div className="flex flex-col justify-center item-center space-y-4 py-4 text-lg">
             <Link
               to="/"
               className="text-gray-900 dark:text-gray-200 text-center"
@@ -112,7 +112,7 @@ const Nav = () => {
             >
               Contact
             </Link>
-            <div className="pt-2 flex justify-center items-center">
+            <div className="pt-2 flex justify-center items-center px-6">
               <SwitchTheme />
             </div>
           </div>
