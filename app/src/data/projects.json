@@ -1,0 +1,124 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "imgUrl": "https://plus.unsplash.com/premium_photo-1661774910035-05257f7d73a6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8RSUyMENvbW1lcmNlJTIwV2Vic2l0ZXxlbnwwfHwwfHx8MA%3D%3D",
+      "name": "E-Commerce Website",
+      "description": "An online platform for buying and selling products.",
+      "status": "active",
+      "category": "Web Development"
+    },
+    {
+      "id": 2,
+      "imgUrl": "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=2370&auto=format&fit=crop",
+      "name": "Portfolio Website",
+      "description": "A personal portfolio showcasing work and skills.",
+      "status": "active",
+      "category": "Web Development"
+    },
+    {
+      "id": 3,
+      "imgUrl": "https://plus.unsplash.com/premium_photo-1661306416293-e3ab553eb73a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TW9iaWxlJTIwQmFua2luZyUyMEFwcHxlbnwwfHwwfHx8MA%3D%3D",
+      "name": "Mobile Banking App",
+      "description": "A secure app for managing bank accounts on the go.",
+      "status": "active",
+      "category": "Mobile Development"
+    },
+    {
+      "id": 4,
+      "imgUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=2370&auto=format&fit=crop",
+      "name": "Weather Forecast App",
+      "description": "A real-time weather prediction application.",
+      "status": "active",
+      "category": "Mobile Development"
+    },
+    {
+      "id": 5,
+      "imgUrl": "https://images.unsplash.com/photo-1534670007418-fbb7f6cf32c3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8VUklMjBEZXNpZ24lMjBUb29sa2l0fGVufDB8fDB8fHww",
+      "name": "UI Design Toolkit",
+      "description": "A collection of reusable UI components and templates.",
+      "status": "active",
+      "category": "UI/UX Design"
+    },
+    {
+      "id": 6,
+      "imgUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8RGF0YSUyMEFuYWx5c2lzJTIwRGFzaGJvYXJkfGVufDB8fDB8fHww",
+      "name": "Data Analysis Dashboard",
+      "description": "A dashboard for analyzing and visualizing data.",
+      "status": "active",
+      "category": "Data Science"
+    },
+    {
+      "id": 7,
+      "imgUrl": "https://cdn.pixabay.com/photo/2024/05/05/16/30/ai-generated-8741448_1280.jpg",
+      "name": "AI Chatbot",
+      "description": "A chatbot powered by artificial intelligence.",
+      "status": "active",
+      "category": "Artificial Intelligence"
+    },
+    {
+      "id": 8,
+      "imgUrl": "https://cdn.pixabay.com/photo/2018/01/28/00/11/hacking-3112539_640.png",
+      "name": "Cybersecurity Training Platform",
+      "description": "An online platform for cybersecurity awareness.",
+      "status": "active",
+      "category": "Cybersecurity"
+    },
+    {
+      "id": 9,
+      "imgUrl": "https://plus.unsplash.com/premium_photo-1688678097492-bae9a5000d40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Q2xvdWQlMjBTdG9yYWdlJTIwU2VydmljZXxlbnwwfHwwfHx8MA%3D%3D",
+      "name": "Cloud Storage Service",
+      "description": "A secure service for storing files in the cloud.",
+      "status": "active",
+      "category": "Cloud Computing"
+    },
+    {
+      "id": 10,
+      "imgUrl": "https://cdn.pixabay.com/photo/2017/11/04/10/26/turn-on-2917049_640.jpg",
+      "name": "DevOps Automation Tool",
+      "description": "A tool to automate DevOps workflows.",
+      "status": "active",
+      "category": "DevOps"
+    },
+    {
+      "id": 11,
+      "imgUrl": "https://images.unsplash.com/photo-1614787913553-8aa43d6fc7f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QmxvY2tjaGFpbiUyMFdhbGxldHxlbnwwfHwwfHx8MA%3D%3D",
+      "name": "Blockchain Wallet",
+      "description": "A secure wallet for managing blockchain assets.",
+      "status": "active",
+      "category": "Blockchain"
+    },
+    {
+      "id": 12,
+      "imgUrl": "https://plus.unsplash.com/premium_photo-1710708048497-5ec29c51580b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8SW9UJTIwU21hcnQlMjBIb21lJTIwU3lzdGVtfGVufDB8fDB8fHww",
+      "name": "IoT Smart Home System",
+      "description": "An Internet of Things (IoT) solution for smart homes.",
+      "status": "active",
+      "category": "IoT"
+    },
+    {
+      "id": 13,
+      "imgUrl": "https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=2370&auto=format&fit=crop",
+      "name": "AR Shopping App",
+      "description": "An augmented reality app for online shopping.",
+      "status": "active",
+      "category": "AR/VR"
+    },
+    {
+      "id": 14,
+      "imgUrl": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=2370&auto=format&fit=crop",
+      "name": "3D Game Development",
+      "description": "A project for creating immersive 3D games.",
+      "status": "active",
+      "category": "Game Development"
+    },
+    {
+      "id": 15,
+      "imgUrl": "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=2370&auto=format&fit=crop",
+      "name": "Digital Marketing Campaign",
+      "description": "A campaign for promoting products using digital marketing strategies.",
+      "status": "active",
+      "category": "Digital Marketing"
+    }
+  ]
+}
