@@ -9,7 +9,7 @@ const DefaultLayout = ({ children }) => {
         <Nav />
       </header>
 
-      <main className="flex-grow container mx-auto px-4 py-6 bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-white">{children}</main>
+      <main className="flex-grow container mx-auto px-4 py-6 ">{children}</main>
       <footer className="bg-gray-100 border-t border-gray-300 shadow-md py-4 dark:bg-gray-900 dark:text-white transition-all duration-300 ease-in-out dark:border-black">
         <Footer />
       </footer>

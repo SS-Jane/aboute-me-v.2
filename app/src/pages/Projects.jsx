@@ -5,17 +5,23 @@ import categories from "../data/categories.json";
 import projectsData from "../data/projects.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import Pagination from "../components/Pagination";
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
+  const [currentPage, setCurrentPage] = useState(1)
+
+  const projectsPerPage = 9;
 
   const handleFilterSelection = (selectedOption) => {
     setSelectedCategory(selectedOption);
+    setCurrentPage(1);
   };
 
   const handleSearchChange = (event) => {
     setSearchQuery(event.target.value);
+    setCurrentPage(1)
   };
 
   const filterProjects = projectsData.projects.filter((project) => {
@@ -24,13 +30,22 @@ const Projects = () => {
     const matchesSearchQuery = project.name
       .toLowerCase()
       .includes(searchQuery.toLowerCase());
-    console.log(matchesCategory);
-    console.log(matchesSearchQuery);
-
     return matchesCategory && matchesSearchQuery;
   });
 
-  console.log("All project", filterProjects);
+  const totalProject = filterProjects.length;
+  const totalPages = Math.ceil(totalProject / projectsPerPage);
+
+  const currentProjects = filterProjects.slice(
+    (currentPage -1) * projectsPerPage,
+    currentPage * projectsPerPage
+  )
+
+  console.log('CurrentPage', currentProjects);
+  
+  const handlePageChange = (newPage) => {
+    setCurrentPage(newPage)
+  }
 
   return (
     <section className="p-6 min-h-screen">
@@ -68,8 +83,8 @@ const Projects = () => {
       </div>
 
       <div className="container-card grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {filterProjects.length > 0 ? (
-          filterProjects.map((project) => {
+        {currentProjects.length > 0 ? (
+          currentProjects.map((project) => {
             return (
               <Card
                 key={project.id}
@@ -83,6 +98,12 @@ const Projects = () => {
           <p className="text-center text-gray-600 dark:text-gray-400">No projects found. please try another search query or category</p>
         )}
       </div>
+      <Pagination 
+      currentPage={currentPage}
+      totalPages={totalPages}
+      onPageChange={handlePageChange}
+      />
+
     </section>
   );
 };

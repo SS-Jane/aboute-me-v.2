@@ -20,7 +20,7 @@ const DropdownFilter = ({ label, options, onSelect }) => {
   return (
     <div className="inline-block text-left w-full sm:w-auto">
       <button
-        className="bg-white dark:bg-gray-800 flex items-center justify-between w-full sm:w-48 px-4 py-3 font-medium text-gray-400 dark:text-gray-400 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200"
+        className="bg-white dark:bg-gray-800 flex items-center justify-between w-full sm:w-48 px-4 py-2 font-medium text-gray-400 dark:text-gray-400 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200"
         onClick={toggleDropdown}
       >
         <span className="truncate">{selected}</span>
