@@ -18,23 +18,23 @@ const DropdownFilter = ({ label, options, onSelect }) => {
   };
 
   return (
-    <div className="relative inline-block text-left">
+    <div className="relative inline-block text-left w-full sm:w-auto">
       <button
-        className="flex items-center justify-center w-48 px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 round-md shadow-sm hover:bg-gray-50 focus:outline-none"
+        className="flex items-center justify-between w-full sm:w-48 px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 round-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-blue-500 focus:border-blue-500 transition-all duration-200"
         onClick={toggleDropdown}
       >
-        {selected}
+        <span className="truncate">{selected}</span>
         {isDropdownOpen ? (
           <FontAwesomeIcon
             icon={faChevronUp}
             bounce
-            className="w-5 h-5 text-gray-500"
+            className="w-5 h-5 text-gray-500 ml-2"
           />
         ) : (
           <FontAwesomeIcon
             icon={faChevronDown}
             bounce
-            className="w-5 h-5 text-gray-500"
+            className="w-5 h-5 text-gray-500 ml-2"
           />
         )}
       </button>
@@ -44,7 +44,7 @@ const DropdownFilter = ({ label, options, onSelect }) => {
             return (
               <li key={index}>
                 <button
-                  className="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100"
+                  className="w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-all duration-200"
                   onClick={() => handleOptionClick(option)}
                 >
                   {option}
