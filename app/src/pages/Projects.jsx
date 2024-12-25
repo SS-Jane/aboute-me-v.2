@@ -42,7 +42,7 @@ const Projects = () => {
           Search projects by title or filler by category
         </p>
       </div>
-      <div className="container-search flex flex-wrap intems-center gap-4 mb-6 justify-between">
+      <div className="container-search flex flex-wrap items-center gap-4 mb-6 justify-between">
         <div className="relative flex items-center w-full sm:w-auto">
           <FontAwesomeIcon
             icon={faMagnifyingGlass}
@@ -58,7 +58,7 @@ const Projects = () => {
           />
         </div>
 
-        <div className="container-dropdown w-full md:w-1/3">
+        <div className="container-dropdown w-full sm:w-auto">
           <DropdownFilter
             label="Filter by Category"
             options={categories.category}
@@ -67,7 +67,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="container-card grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="container-card grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {filterProjects.length > 0 ? (
           filterProjects.map((project) => {
             return (
@@ -80,7 +80,7 @@ const Projects = () => {
             );
           })
         ) : (
-          <p>No projects found. please try another search query or category</p>
+          <p className="text-center text-gray-600 dark:text-gray-400">No projects found. please try another search query or category</p>
         )}
       </div>
     </section>
