@@ -19,12 +19,12 @@ const SwitchTheme = () => {
   };
   return (
     <button
-      className="px-3 py-2 rounded-full bg-gray-100 hover:bg-gray-200 hover:text-blue-400 transition flex items-center dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:text-orange-400"
+      className="px-4 py-2 rounded-full bg-gray-100 hover:bg-gray-200 hover:text-blue-400 transition flex items-center dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:text-orange-400"
       aria-label="Toggle Mode"
       // eslint-disable-next-line react/no-unknown-property
       onClick={toggleTheme}
     >
-      <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} className="text-xl items-center" />
+      <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} className="text-xl items-center h-5 w-5" />
     </button>
   );
 };
