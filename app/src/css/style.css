@@ -2,20 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --border: 214.3 31.8% 91.4%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
 .btn {
-    @apply px-4 py-2 rounded-md text-white font-medium shadow-md transition duration-200 ease-in-out;
+  @apply px-4 py-2 rounded-md text-white font-medium shadow-md transition duration-200 ease-in-out;
 }
 .btn-2 {
-    @apply px-4 py-2 rounded-xl lg:rounded-md font-medium transition-all duration-300 ease-in-out
+  @apply px-4 py-2 rounded-xl lg:rounded-md font-medium transition-all duration-300 ease-in-out;
 }
 
 .btn-primary {
-    @apply bg-blue-500 hover:bg-blue-600 focus:ring focus:ring-blue-300;
+  @apply bg-blue-500 hover:bg-blue-600 focus:ring focus:ring-blue-300;
 }
 
 .btn-secondary {
-    @apply bg-gray-500 hover:bg-gray-600 focus:ring focus:ring-gray-300;
+  @apply bg-gray-500 hover:bg-gray-600 focus:ring focus:ring-gray-300;
 }
 .btn-ghost {
-    @apply text-gray-900 hover:bg-gray-200 focus:ring focus:ring-gray-300 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700
+  @apply text-gray-900 hover:bg-gray-200 focus:ring focus:ring-gray-300 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700;
 }

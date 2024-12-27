@@ -42,23 +42,23 @@ const Projects = () => {
           Search projects by title or filler by category
         </p>
       </div>
-      <div className="container-search flex flex-wrap intems-center gap-4 mb-6 justify-between">
+      <div className="container-search flex flex-wrap items-center gap-4 mb-6 justify-between">
         <div className="relative flex items-center w-full sm:w-auto">
           <FontAwesomeIcon
             icon={faMagnifyingGlass}
             shake
-            className="absolute left-3 text-gray-400 dark:text-gray-400"
+            className="absolute left-3 text-gray-600 dark:text-gray-400"
           />
           <input
             type="text"
             placeholder="Search Projects"
             value={searchQuery}
             onChange={handleSearchChange}
-            className="w-full sm:w-80 pl-10 pr-2 py-2 border border-gray-300 rounded-md dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            className="w-full sm:w-80 pl-10 pr-2 py-2 border text-gray-600 border-gray-300 rounded-md bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all duration-300"
           />
         </div>
 
-        <div className="container-dropdown w-full md:w-1/3">
+        <div className="container-dropdown w-full sm:w-auto">
           <DropdownFilter
             label="Filter by Category"
             options={categories.category}

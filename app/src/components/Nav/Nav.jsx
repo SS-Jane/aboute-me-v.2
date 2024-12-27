@@ -11,7 +11,7 @@ const Nav = () => {
   };
 
   return (
-    <header className="sticky top-0 z-10 bg-white/80 backdrop-blur-md shadow-sm dark:bg-gray-900/80 dark:text-white transition-all duration-300">
+    
       <nav className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <Link
@@ -40,7 +40,7 @@ const Nav = () => {
               className="btn-ghost btn-2 mx-1 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              About
+              About Me
             </Link>
 
             <Link
@@ -59,6 +59,7 @@ const Nav = () => {
               Contact
             </Link>
           </div>
+
           <div className="flex justify-center items-center space-x-4">
             <div className="hidden md:block">
               <SwitchTheme />
@@ -118,7 +119,6 @@ const Nav = () => {
           </div>
         </div>
       </nav>
-    </header>
   );
 };
 
