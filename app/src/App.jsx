@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -34,11 +35,19 @@ function App() {
             </>
           }
         />
-         <Route
+        <Route
           path="/projects"
           element={
             <>
               <Projects />
+            </>
+          }
+        />
+        <Route
+          path="/resume"
+          element={
+            <>
+              <Resume />
             </>
           }
         />

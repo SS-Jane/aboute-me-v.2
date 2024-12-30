@@ -5,7 +5,9 @@ const Home = () => {
     <section className="flex flex-col justify-between items-center lg:grid lg:grid-cols-2 gap-8 px-6 lg:px-20 py-12">
       <div className="content-text flex justify-center items-start flex-col w-full space-y-6">
         <div className="flex item-center space-x-2">
-          <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r bg-clip-text text-transparent from-blue-500 via-purple-500 to-sky-500 animate-text">Hello!! </h1>
+          <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r bg-clip-text text-transparent from-blue-500 via-purple-500 to-sky-500 animate-text">
+            Hello!!{" "}
+          </h1>
           <img
             src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f64f_1f3fb/512.webp"
             alt="wave-animate"
@@ -18,7 +20,8 @@ const Home = () => {
         </p>
 
         <p className="text-xl md:text-2xl lg:text-3xl font-medium text-gray-800 dark:text-gray-100">
-          I&apos;M <span className="text-blue-500 font-bold">THAWEESIN SANGPRASIT</span>
+          I&apos;M{" "}
+          <span className="text-blue-500 font-bold">THAWEESIN SANGPRASIT</span>
         </p>
         <div className="mt-4 font-extrabold text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-sky-500 bg-clip-text animate-text">
           <TypeAnimation

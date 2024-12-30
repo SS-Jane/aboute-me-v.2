@@ -24,18 +24,15 @@ const Projects = () => {
     const matchesSearchQuery = project.name
       .toLowerCase()
       .includes(searchQuery.toLowerCase());
-    console.log(matchesCategory);
-    console.log(matchesSearchQuery);
 
     return matchesCategory && matchesSearchQuery;
   });
 
-  console.log("All project", filterProjects);
 
   return (
     <section className="p-6 min-h-screen">
       <div className="mb-6 text-center">
-        <h1 className="text-3xl font-bold">Projects</h1>
+        <h1 className="text-4xl font-extrabold bg-gradient-to-r bg-clip-text text-transparent from-blue-500 via-purple-500 to-sky-500 animate-text">Projects</h1>
       </div>
       <div className="mb-4 text-center">
         <p className="text-gray-600 dark:text-gray-400">
