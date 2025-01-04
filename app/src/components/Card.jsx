@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router";
 
-const Card = ({ img, title, categories }) => {
+const Card = ({ img, title, categories, id }) => {
   return (
     <div className="bg-gray-100 dark:bg-gray-900 text-foreground rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-neon">
-      <a href="http://" className="block">
+      <Link to={`/projects/project/${id}/${title}`} className="block">
         <figure>
           <img src={img} alt={title} className="w-full h-48 object-cover" />
           <figcaption className="p-4">
@@ -15,7 +16,7 @@ const Card = ({ img, title, categories }) => {
             </p>
           </figcaption>
         </figure>
-      </a>
+      </Link>
     </div>
   );
 };
@@ -24,6 +25,7 @@ Card.propTypes = {
   img: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   categories : PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
 };
 
 export default Card;

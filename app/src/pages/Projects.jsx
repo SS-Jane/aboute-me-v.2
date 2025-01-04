@@ -30,7 +30,7 @@ const Projects = () => {
 
 
   return (
-    <section className="p-6 min-h-screen">
+    <section className="px-12 min-h-screen">
       <div className="mb-6 text-center">
         <h1 className="text-4xl font-extrabold bg-gradient-to-r bg-clip-text text-transparent from-blue-500 via-purple-500 to-sky-500 animate-text">Projects</h1>
       </div>
@@ -70,6 +70,7 @@ const Projects = () => {
             return (
               <Card
                 key={project.id}
+                id={project.id}
                 img={project.imgUrl}
                 title={project.name}
                 categories={project.category}

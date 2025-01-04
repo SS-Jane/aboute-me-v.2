@@ -2,7 +2,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
   return (
-    <section className="flex flex-col justify-between items-center lg:grid lg:grid-cols-2 gap-8 px-6 lg:px-20 py-12">
+    <section className="flex flex-col justify-between items-center lg:grid lg:grid-cols-2 gap-8 py-12">
       <div className="content-text flex justify-center items-start flex-col w-full space-y-6">
         <div className="flex item-center space-x-2">
           <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r bg-clip-text text-transparent from-blue-500 via-purple-500 to-sky-500 animate-text">

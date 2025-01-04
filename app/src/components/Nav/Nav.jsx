@@ -51,13 +51,13 @@ const Nav = () => {
               Projects
             </Link>
 
-            <Link
+            {/* <Link
               to="/resume"
               className="btn-ghost btn-2 mx-1 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Resume
-            </Link>
+            </Link> */}
 
             <Link
               to="/contact"
@@ -116,13 +116,13 @@ const Nav = () => {
               Projects
             </Link>
 
-            <Link
+            {/* <Link
               to="/resume"
               className="text-gray-900 dark:text-gray-200 text-center"
               onClick={() => setIsMenuOpen(false)}
             >
               Resume
-            </Link>
+            </Link> */}
 
             <Link
               to="/contact"

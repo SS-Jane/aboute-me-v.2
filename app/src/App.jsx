@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import Resume from "./pages/Resume";
+import SingleProject from "./pages/SingleProject";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -43,14 +43,23 @@ function App() {
             </>
           }
         />
+
         <Route
+        path="/projects/project/:id/:title"
+        element={
+          <>
+          <SingleProject />
+          </>
+        }
+        />
+        {/* <Route
           path="/resume"
           element={
             <>
               <Resume />
             </>
           }
-        />
+        /> */}
         <Route
           path="/contact"
           element={

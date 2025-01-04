@@ -10,9 +10,11 @@ import {
 import { SiPostman, SiPostgresql, SiMongodb } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { RiNextjsFill } from "react-icons/ri";
+
 const About = () => {
+
   return (
-    <section className="p-6 max-w-5xl mx-auto">
+    <section >
       <div className="mb-6 text-center">
         <h1 className="text-4xl font-extrabold bg-gradient-to-r bg-clip-text text-transparent from-blue-500 via-purple-500 to-sky-500 animate-text">About me</h1>
       </div>

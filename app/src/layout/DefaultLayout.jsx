@@ -10,7 +10,7 @@ const DefaultLayout = ({ children }) => {
         <Nav />
       </header>
 
-      <main className="flex-grow container mx-auto px-4 py-6">
+      <main className="flex-grow container mx-auto px-4 py-6 max-w-6xl">
         {children}
         <ScrollToTopButton/>
       </main>
