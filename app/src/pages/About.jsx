@@ -10,6 +10,7 @@ import {
 import { SiPostman, SiPostgresql, SiMongodb } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { RiNextjsFill } from "react-icons/ri";
+import profileImg from "../assets/profile.webp"
 
 const About = () => {
   return (
@@ -22,9 +23,9 @@ const About = () => {
       <article className="container-about flex flex-col md:flex-row items-center gap-6">
         <figure className="w-full md:w-1/3">
           <img
-            src="/src/assets/profile.webp"
+            src={profileImg}
             className="rounded-lg shadow-lg dark:shadow-neon"
-            alt="A cartoon-style illustration of a dog working intensely at a computer, with a dramatic fiery background to symbolize urgency. The dog appears focused"
+            alt="Profile"
           />
         </figure>
         <div className="container-text md:w-2/3 mt-4">
