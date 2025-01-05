@@ -11,8 +11,8 @@ const Nav = () => {
   };
 
   return (
-    <header className="sticky top-0 z-10 bg-white/80 backdrop-blur-md shadow-sm dark:bg-gray-900/80 dark:text-white transition-all duration-300">
-      <nav className="container mx-auto px-4 py-3">
+    
+      <nav className="container mx-auto px-6 py-3 my-4">
         <div className="flex items-center justify-between">
           <Link
             to="/"
@@ -26,7 +26,7 @@ const Nav = () => {
             <span className="font-bold text-xl text-blue-500">SuperJane</span>
           </Link>
 
-          <div className="hidden md:flex items-center space-x-8 text-lg">
+          <div className="hidden lg:flex items-center space-x-8 text-lg">
             <Link
               to="/"
               className="btn-ghost btn-2 mx-1 transition-colors"
@@ -40,7 +40,7 @@ const Nav = () => {
               className="btn-ghost btn-2 mx-1 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              About
+              About Me
             </Link>
 
             <Link
@@ -51,6 +51,14 @@ const Nav = () => {
               Projects
             </Link>
 
+            {/* <Link
+              to="/resume"
+              className="btn-ghost btn-2 mx-1 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Resume
+            </Link> */}
+
             <Link
               to="/contact"
               className="btn-ghost btn-2 mx-1 transition-colors"
@@ -58,12 +66,15 @@ const Nav = () => {
             >
               Contact
             </Link>
+
+            
           </div>
+
           <div className="flex justify-center items-center space-x-4">
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
               <SwitchTheme />
             </div>
-            <div className="md:hidden block items-center">
+            <div className="lg:hidden block items-center">
               <HamburgerButton
                 isOpen={isMenuOpen}
                 onClick={toggleMenu}
@@ -74,7 +85,7 @@ const Nav = () => {
         </div>
 
         <div
-          className={`md:hidden transition-all duration-300 ease-in-out ${
+          className={`lg:hidden transition-all duration-300 ease-in-out ${
             isMenuOpen
               ? "max-h-72 opacity-100 mt-4"
               : "max-h-0 opacity-0 overflow-hidden"
@@ -105,6 +116,14 @@ const Nav = () => {
               Projects
             </Link>
 
+            {/* <Link
+              to="/resume"
+              className="text-gray-900 dark:text-gray-200 text-center"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Resume
+            </Link> */}
+
             <Link
               to="/contact"
               className="text-gray-900 dark:text-gray-200 text-center"
@@ -118,7 +137,6 @@ const Nav = () => {
           </div>
         </div>
       </nav>
-    </header>
   );
 };
 

@@ -18,9 +18,12 @@ const DropdownFilter = ({ label, options, onSelect }) => {
   };
 
   return (
-    <div className="relative inline-block text-left w-full sm:w-auto">
+    <div className="relative inline-block text-left w-full ">
       <button
-        className="flex items-center justify-between w-full sm:w-48 px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 round-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-blue-500 focus:border-blue-500 transition-all duration-200"
+        className="flex items-center justify-between w-full sm:w-80 px-4 py-2 text-gray-600 dark:text-gray-400  dark:border-gray-700 border rounded-md 
+        bg-gray-50 dark:bg-gray-800 text-foreground border-gray-300
+        hover:bg-accent/10 focus:outline-none focus:ring-2 focus:ring-blue-500 
+        transition-all duration-300"
         onClick={toggleDropdown}
       >
         <span className="truncate">{selected}</span>
@@ -39,12 +42,12 @@ const DropdownFilter = ({ label, options, onSelect }) => {
         )}
       </button>
       {isDropdownOpen && (
-        <ul className="absolute z-10 w-full mt-2 bg-white border border-gray-300 rounded-md shadow-lg max-h-60 overflow-auto">
+        <ul className="absolute z-50 w-full mt-2 border border-gray-300 dark:text-gray-400 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 rounded-md shadow-lg max-h-60 overflow-auto transition-all duration-200">
           {options.map((option, index) => {
             return (
               <li key={index}>
                 <button
-                  className="w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-all duration-200"
+                  className="w-full px-4 py-2 text-left text-sm text-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-900 hover:text-blue-600 dark:hover:text-blue-400"
                   onClick={() => handleOptionClick(option)}
                 >
                   {option}
