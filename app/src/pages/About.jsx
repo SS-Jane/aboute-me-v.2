@@ -12,11 +12,12 @@ import { VscVscode } from "react-icons/vsc";
 import { RiNextjsFill } from "react-icons/ri";
 
 const About = () => {
-
   return (
-    <section >
+    <section className="px-12">
       <div className="mb-6 text-center">
-        <h1 className="text-4xl font-extrabold bg-gradient-to-r bg-clip-text text-transparent from-blue-500 via-purple-500 to-sky-500 animate-text">About me</h1>
+        <h1 className="text-4xl font-extrabold bg-gradient-to-r bg-clip-text text-transparent from-blue-500 via-purple-500 to-sky-500 animate-text">
+          About me
+        </h1>
       </div>
       <article className="container-about flex flex-col md:flex-row items-center gap-6">
         <figure className="w-full md:w-1/3">
@@ -26,22 +27,19 @@ const About = () => {
             alt="A cartoon-style illustration of a dog working intensely at a computer, with a dramatic fiery background to symbolize urgency. The dog appears focused"
           />
         </figure>
-        <div className="container-text md:w-2/3">
-        <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-          <span className="text-blue-500 font-bold">Hi, I'm Jane. </span>
-          <br />
-          Previously an Electronics and Computer Systems engineer,
-          <br />
-          I've recently embarked on a new journey as a web developer. 
-          <br />
-          My background in hardware has given me a unique perspective on the
-          underlying technologies that power the web. 
-          <br />
-          I'm excited to apply my knowledge and continuously learn new skills to create dynamic and
-          engaging web experiences.
-        </p>
+        <div className="container-text md:w-2/3 mt-4">
+          <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+            <p className="text-blue-500 font-bold">Hi, I'm Jane. </p>
+            <p className="leading-relaxed mt-2">
+              Previously an Electronics and Computer Systems engineer, I've
+              recently embarked on a new journey as a web developer. My
+              background in hardware has given me a unique perspective on the
+              underlying technologies that power the web. I'm excited to apply
+              my knowledge and continuously learn new skills to create dynamic
+              and engaging web experiences.
+            </p>
+          </p>
         </div>
-        
       </article>
 
       <div className="container-skills mt-12 flex flex-col justify-center items-center">

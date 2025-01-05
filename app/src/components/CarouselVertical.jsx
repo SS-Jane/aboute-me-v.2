@@ -15,25 +15,25 @@ const CarouselVertical = ({ images }) => {
   };
 
   return (
-    <section className="flex gap-4">
+    <section className="flex flex-col md:flex-row gap-4 w-full max-w-screen-lg mx-auto">
       <div className="carousel carousel-vertical h-96 rounded-xl shadow-xl dark:shadow-neon">
         {images.map((image, index) => {
           return (
             <div
               key={index}
               id={`slide-vertical-${index}`}
-              className="carousel-item w-full h-[400px]"
+              className="carousel-item w-full h-auto max-h-[400px] md:max-h-[500px]"
             >
               <img
                 src={image}
                 alt={`Slide ${index + 1}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
           );
         })}
       </div>
-      <div className="flex flex-col justify-center gap-2">
+      <div className="flex flex-row md:flex-col justify-center gap-2">
         {images.map((_, index) => {
           return (
             <a

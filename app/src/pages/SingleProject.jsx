@@ -51,7 +51,7 @@ const SingleProject = () => {
         <CarouselVertical images={project.imgUrl} />
       </div>
 
-      <div className="container-content flex flex-row gap-8">
+      <div className="container-content flex flex-col lg:flex-row gap-8">
         <div className="container-article-1 lg:w-1/3 space-y-6">
           <div className="container-customer p-4 space-y-3 rounded-lg bg-gray-50 dark:bg-gray-800/50">
             <h2 className="text-xl font-bold text-foreground">Customer</h2>
@@ -112,9 +112,40 @@ const SingleProject = () => {
 
       <div className="container-related-projects space-y-6 mt-12">
         <h2 className="text-2xl font-bold text-foreground">Related Projects</h2>
-        <div className="container-card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="container-card hidden lg:grid lg:grid-cols-3 gap-6">
           {projectsData.projects
             .filter((item) => item.id !== project.id)
+            .sort(() => 0.5 - Math.random())
+            .slice(0, 6)
+            .map((item) => (
+              <Card
+                key={item.id}
+                id={item.id}
+                img={item.imgUrl}
+                title={item.name}
+                categories={item.category}
+              />
+            ))}
+        </div>
+        <div className="container-card hidden md:grid md:grid-cols-2 lg:hidden gap-6">
+          {projectsData.projects
+            .filter((item) => item.id !== project.id)
+            .sort(() => 0.5 - Math.random())
+            .slice(0, 4)
+            .map((item) => (
+              <Card
+                key={item.id}
+                id={item.id}
+                img={item.imgUrl}
+                title={item.name}
+                categories={item.category}
+              />
+            ))}
+        </div>
+        <div className="container-card grid grid-cols-1 md:hidden gap-6">
+          {projectsData.projects
+            .filter((item) => item.id !== project.id)
+            .sort(()=> 0.5 - Math.random()) 
             .slice(0, 3)
             .map((item) => (
               <Card
