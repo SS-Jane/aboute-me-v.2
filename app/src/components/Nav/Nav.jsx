@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import SwitchTheme from "./SwitchTheme";
 import HamburgerButton from "../HamburgerAnimateMenu";
-
+import logo from "../../assets/android-chrome-512x512.png"
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -19,7 +19,7 @@ const Nav = () => {
             className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
           >
             <img
-              src="\src\assets\android-chrome-512x512.png"
+              src={logo}
               alt="logo"
               className="h-8 w-8 object-contain"
             />

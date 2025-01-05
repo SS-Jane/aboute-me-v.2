@@ -1,4 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
+import homeImg from "../assets/undraw_developer-activity_dn7p.svg"
 
 const Home = () => {
   return (
@@ -45,7 +46,7 @@ const Home = () => {
       <div className="content-image flex justify-center items-center">
         <figure className="relative">
           <img
-            src="\src\assets\undraw_developer-activity_dn7p.svg"
+            src={homeImg}
             alt="Developer Activity"
             className="max-w-xs md:max-w-md lg:max-w-lg rounded-full dark:shadow-none dark:animate-glow p-10"
           />
