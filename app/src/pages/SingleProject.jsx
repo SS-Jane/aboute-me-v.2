@@ -2,7 +2,7 @@ import { useParams } from "react-router";
 import projectsData from "../data/projects.json";
 import Card from "../components/Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendarDays, faClock } from "@fortawesome/free-regular-svg-icons";
+import { faClock } from "@fortawesome/free-regular-svg-icons";
 import { faTag, faClipboardCheck } from "@fortawesome/free-solid-svg-icons";
 import CarouselHorizon from "../components/CarouselHorizon";
 import CarouselVertical from "../components/CarouselVertical";
