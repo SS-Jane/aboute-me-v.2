@@ -29,12 +29,12 @@ const About = () => {
         </figure>
         <div className="container-text md:w-2/3 mt-4">
           <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-            <p className="text-blue-500 font-bold">Hi, I'm Jane. </p>
+            <p className="text-blue-500 font-bold">Hi, I&apos;m Jane. </p>
             <p className="leading-relaxed mt-2">
-              Previously an Electronics and Computer Systems engineer, I've
+              Previously an Electronics and Computer Systems engineer, I&apos;ve
               recently embarked on a new journey as a web developer. My
               background in hardware has given me a unique perspective on the
-              underlying technologies that power the web. I'm excited to apply
+              underlying technologies that power the web. I&apos;m excited to apply
               my knowledge and continuously learn new skills to create dynamic
               and engaging web experiences.
             </p>
